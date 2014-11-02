@@ -1,15 +1,20 @@
 package chase.mods.CosmiCraft.init;
 
-import cpw.mods.fml.common.registry.GameRegistry;
 import chase.mods.CosmiCraft.block.BaseBlock;
+import chase.mods.CosmiCraft.block.fire.FireStone;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModBlocks
 {
-	public static BaseBlock baseBlock = new BaseBlock();
+	public static BaseBlock fireStone = new FireStone();
 	
 	public static void init()
 	{
-		GameRegistry.registerBlock(baseBlock, "baseBlock");
+		registerBlock(fireStone);
 	}
 	
+	public static void registerBlock(BaseBlock block)
+	{
+		GameRegistry.registerBlock(block, block.getName());
+	}
 }

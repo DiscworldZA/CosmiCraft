@@ -11,7 +11,10 @@ public class Names
 	
 	public static class Blocks
 	{
-		
+		public static class Fire
+		{
+			public static final String FireStone = "fireStone";
+		}
 	}
 	
 	public static class Items
